@@ -2,168 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🔥 Burn Your Limits with CashVib!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CashVib Power</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-    /* Reset */
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(circle at center, #330000, #000000 90%);
-      color: #ff3e00;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 30px;
-      overflow: hidden;
     }
-
-    .container {
-      background: #1a0000;
-      border: 3px solid #ff3e00;
-      border-radius: 30px;
-      max-width: 720px;
-      padding: 50px 40px;
-      box-shadow:
-        0 0 15px #ff3e00,
-        0 0 30px #ff0000,
-        0 0 50px #ff6a00;
-      position: relative;
-      z-index: 2;
-    }
-
     h1 {
-      font-size: 48px;
-      margin-bottom: 25px;
-      text-transform: uppercase;
-      text-shadow:
-        0 0 10px #ff3e00,
-        0 0 20px #ff6a00,
-        0 0 30px #ff4500;
-      animation: flicker 2s infinite alternate;
+      font-size: 2.8em;
+      margin-bottom: 0.3em;
     }
-
-    @keyframes flicker {
-      0%, 100% { text-shadow: 0 0 10px #ff3e00, 0 0 20px #ff6a00, 0 0 30px #ff4500; }
-      50% { text-shadow: 0 0 20px #ff6a00, 0 0 40px #ff7a00, 0 0 50px #ff5000; }
-    }
-
     p {
-      font-size: 19px;
-      line-height: 1.7;
-      margin-bottom: 30px;
-      color: #ffb27d;
-      text-shadow: 0 0 5px #ff4e00;
+      max-width: 600px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
     }
-
-    .btn {
-      background: linear-gradient(90deg, #ff4500, #ff2200);
-      color: #fff;
-      font-size: 26px;
-      font-weight: 900;
-      padding: 22px 60px;
+    .launch-btn {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
       border: none;
+      color: white;
+      padding: 15px 35px;
+      font-size: 1.2em;
       border-radius: 50px;
       cursor: pointer;
-      box-shadow:
-        0 0 15px #ff2200,
-        0 0 30px #ff4500,
-        0 0 50px #ff7a00;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: inline-flex;
-      align-items: center;
-      gap: 15px;
-      transition: box-shadow 0.3s ease, transform 0.2s ease;
-      user-select: none;
-      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(0,255,255,0.3);
     }
-
-    .btn:hover {
-      box-shadow:
-        0 0 25px #ff5500,
-        0 0 50px #ff6600,
-        0 0 80px #ff8800;
-      transform: scale(1.1);
+    .launch-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0,255,255,0.6);
     }
-
-    .btn svg {
-      width: 32px;
-      height: 32px;
-      fill: #fff;
-      filter: drop-shadow(0 0 3px #ff5500);
-      animation: flame 3s infinite alternate;
+    .dollar {
+      font-size: 2em;
+      color: gold;
+      margin-top: 1em;
+      animation: pulse 1.2s infinite;
     }
-
-    @keyframes flame {
-      0% { filter: drop-shadow(0 0 3px #ff5500) drop-shadow(0 0 8px #ff9900); }
-      100% { filter: drop-shadow(0 0 10px #ff3300) drop-shadow(0 0 20px #ff6600); }
-    }
-
-    .footer {
-      margin-top: 45px;
-      font-size: 14px;
-      color: #ff6a00cc;
-      text-shadow: 0 0 3px #ff3e00;
-    }
-
-    /* Flame animation background (optional) */
-    .flames {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      pointer-events: none;
-      background: url('https://i.imgur.com/J7rn3ET.gif') center center / cover no-repeat;
-      opacity: 0.12;
-      z-index: 1;
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 32px;
-      }
-      p {
-        font-size: 16px;
-      }
-      .btn {
-        font-size: 20px;
-        padding: 18px 45px;
-      }
-      .btn svg {
-        width: 26px;
-        height: 26px;
-      }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="flames"></div>
-  <div class="container" role="main" aria-label="CashVib earning platform introduction">
-    <h1>🔥 BURN YOUR LIMITS WITH CASHVIB!</h1>
-    <p>
-      CashVib is a blazing platform that offers blazing-fast ways to earn real money online.  
-      Watch ads, click links, and participate in surveys to ignite your income and burn through financial barriers.
-    </p>
-    <p>
-      Trusted by thousands worldwide, CashVib’s fiery system guarantees a hot path to boost your earnings effortlessly.
-    </p>
-    <p>
-      Its blazing interface and straightforward approach ensure everyone, from beginners to pros, can fuel their financial freedom.
-    </p>
-    <p>
-      Ready to light up your wallet and turn the heat on? Join CashVib now and feel the fire of success!
-    </p>
-    <a href="https://B2n.ir/fh7012" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Launch CashVib earning platform">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm1.516 15.493c-1.203.227-2.707.134-3.507-1.137l1.97-1.136c.532.953 1.319 1.106 2.03.77.727-.35.796-1.25.132-1.62-1.44-.831-3.48-1.422-3.833-3.985h1.697c.167 1.19 1.12 1.624 2.012 1.271.776-.292 1.243-1.089 1.042-2.17-.118-.647-.67-1.11-1.43-1.274v-1.42h-1.15v1.25c-.653.132-1.3.527-1.66 1.16l-1.79-1.04c.41-.925 1.43-1.83 3.44-2.023v-1.26h1.151v1.09c1.058.2 1.843.872 2.07 1.9.31 1.41-.225 2.67-1.468 3.297 1.11.3 2.414.946 2.58 2.646.22 2.37-2.045 3.47-4.18 3.594z"/></svg>
-      LAUNCH NOW
-    </a>
-    <div class="footer">© 2025 CashVib - Ignite Your Online Earnings</div>
-  </div>
+  <h1>Welcome to CashVib World!</h1>
+  <p>
+    CashVib is one of the most exciting earning platforms. Earn from email ads, referrals, clicks, and much more. 
+    Thousands of users trust this service for fast and secure income growth.
+    Join now and turn your spare time into real dollars.
+  </p>
+
+  <a href="https://b2n.ir/fh7012" target="_blank">
+    <button class="launch-btn">🚀 Launch Now</button>
+  </a>
+
+  <div class="dollar">💵💵💵</div>
 </body>
 </html>
