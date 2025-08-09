@@ -2,72 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CashVib Power</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Earn with CashVib - Start Now!</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #f0f0f0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    header {
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 600px;
+      cursor: pointer;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    header:hover {
+      transform: scale(1.03);
+    }
+    header img {
+      width: 100%;
+      display: block;
+    }
+    main {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
       text-align: center;
     }
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.3em;
+    main h1 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
     }
-    p {
-      max-width: 600px;
-      font-size: 1.1em;
+    main p {
+      font-size: 1.1rem;
       line-height: 1.6;
-      margin-bottom: 1.5em;
+      margin-bottom: 15px;
+      color: #ddd;
     }
-    .launch-btn {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      border: none;
-      color: white;
-      padding: 15px 35px;
-      font-size: 1.2em;
+    main p strong {
+      color: #ffd700;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1e3c72;
+      background: #ffd700;
       border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6);
+      transition: background 0.3s ease, transform 0.3s ease;
       cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 0 20px rgba(0,255,255,0.3);
+      user-select: none;
+      margin-top: 15px;
     }
-    .launch-btn:hover {
+    .btn:hover {
+      background: #ffec70;
       transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(0,255,255,0.6);
     }
-    .dollar {
-      font-size: 2em;
-      color: gold;
-      margin-top: 1em;
-      animation: pulse 1.2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
+    @media (max-width: 640px) {
+      body, main, header {
+        width: 90%;
+        padding: 0;
+      }
+      main p {
+        font-size: 1rem;
+      }
+      .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to CashVib World!</h1>
-  <p>
-    CashVib is one of the most exciting earning platforms. Earn from email ads, referrals, clicks, and much more. 
-    Thousands of users trust this service for fast and secure income growth.
-    Join now and turn your spare time into real dollars.
-  </p>
 
-  <a href="https://b2n.ir/fh7012" target="_blank">
-    <button class="launch-btn">🚀 Launch Now</button>
-  </a>
+  <!-- عکس لینک‌دار به سایت خودت -->
+  <header onclick="window.location.href='https://B2n.ir/fh7012'">
+    <img src="https://i.ibb.co/JwCk5tgR/conclusion-of-the-contract-3100579-1280.jpg" alt="Earn with CashVib" />
+  </header>
 
-  <div class="dollar">💵💵💵</div>
+  <!-- متن تبلیغاتی حرفه‌ای -->
+  <main>
+    <h1>Earn Real Money with CashVib Today!</h1>
+    <p><strong>CashVib</strong> is your gateway to easy and reliable online income, offering the best referral programs.</p>
+    <p>Start earning by sharing your unique referral link and watch your passive income grow.</p>
+    <p>Fast payouts, user-friendly platform, and thousands of satisfied users worldwide.</p>
+    <p>Join the CashVib community now and turn your time into cash with no hassle!</p>
+    <p><strong>Your success starts with a single click.</strong></p>
+
+    <!-- دکمه هدایت به لینک رفرال -->
+    <a href="https://B2n.ir/pp6810" target="_blank" class="btn" rel="noopener noreferrer">
+      Join CashVib Now!
+    </a>
+  </main>
+
 </body>
 </html>
